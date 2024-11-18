@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Cash Register</h1>
+      <p class="subtitle">Calculate the change with ease</p>
+    </header>
+
+    <main class="main-content">
+      <div class="cash-register-container">
+        <div class="input-group">
+          <label for="price" class="input-label">Price of Item:</label>
+          <input
+            type="number"
+            id="price"
+            step="0.01"
+            placeholder="Enter item price"
+            class="input-field"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="cash" class="input-label">Cash Given:</label>
+          <input
+            type="number"
+            id="cash"
+            step="0.01"
+            placeholder="Enter cash given"
+            class="input-field"
+          />
+        </div>
+
+        <button id="purchase-btn" class="btn primary-btn">
+          Calculate Change
+        </button>
+
+        <div id="change-due" class="change-due"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Cash Register App | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

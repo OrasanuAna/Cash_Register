@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #264653,
+    #2a9d8f
+  ); /* Verde și albastru închis */
+  color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1b4332; /* Verde foarte închis */
+  color: #e9ecef;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #a8dadc; /* Verde deschis */
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.cash-register-container {
+  background-color: rgba(233, 236, 239, 0.95); /* Alb-gri foarte deschis */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #1d3557; /* Albastru închis */
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #2a9d8f; /* Verde accentuat */
+  border-radius: 5px;
+  background-color: #a8dadc; /* Verde deschis */
+  color: #1d3557;
+}
+
+.input-field::placeholder {
+  color: #457b9d; /* Verde-albastru deschis */
+}
+
+.btn {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.primary-btn {
+  background-color: #2a9d8f;
+  color: #f1faee; /* Alb aproape pur */
+}
+
+.primary-btn:hover {
+  background-color: #1b4332;
+}
+
+.change-due {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1b4332; /* Verde foarte închis */
+  text-align: center;
+}
+
+.footer {
+  background-color: #1d3557; /* Albastru închis */
+  color: #e9ecef;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
